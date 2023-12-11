@@ -1,17 +1,11 @@
 {
-  "name": "Neovim",
-  "id": "neovim",
-  "version": "0.1.1",
-  "description": "Provide neovim features for devcontainers",
-  "options": {
-    "version": {
-      "type": "string",
-      "proposals": ["v0.9.1", "v0.9.2", "stable", "nightly"],
-      "default": "stable",
-      "description": "Select the neovim version you want to install as present in GitHub Releases"
-    }
-  },
-  "installsAfter": [
-    "ghcr.io/ryanmsnyder/devcontainer-features/neovim-essentials:0"
-  ]
+    "id": "neovim-apt-get",
+    "version": "1.0.18",
+    "name": "Neovim (via apt-get)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/neovim-apt-get",
+    "description": "Neovim is a fork of Vim focused on modern code and features, rather than running in legacy environments.",
+    "options": {},
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+    ]
 }
